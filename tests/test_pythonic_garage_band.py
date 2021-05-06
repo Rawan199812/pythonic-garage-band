@@ -163,18 +163,18 @@ def clean():
 # #######################
 
 
-# @pytest.mark.skip("stretch")
-# def test_from_file():
-#     with open("assets/bands.json") as f:
-#         bands = json.loads(f.read())
+@pytest.mark.skip("stretch")
+def test_from_file():
+    with open("assets/bands.json") as f:
+        bands = json.loads(f.read())
 
-#     assert len(bands) == 1
+    assert len(bands) == 1
 
-#     nirvana_data = bands[0]
+    nirvana_data = bands[0]
 
-#     nirvana = Band(nirvana_data["name"], nirvana_data["members"])
+    nirvana = Band(nirvana_data["name"], nirvana_data["members"])
 
-#     assert nirvana.name == "Nirvana"
+    assert nirvana.name == "Nirvana"
 
 
 @pytest.mark.skip("stretch")
