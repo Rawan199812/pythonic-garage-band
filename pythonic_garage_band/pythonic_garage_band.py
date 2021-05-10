@@ -1,4 +1,4 @@
-# from abc import abstractmethod, ABC
+from abc import abstractmethod, ABC
 class Band:
     
     band_list = []
@@ -39,7 +39,7 @@ class Musician:
 
 class Guitarist(Musician):
     def __init__(self, name):
-        super().__init__(name, "guitar")
+        super().__init__(name, "guitar")  # To create instance from Musician (base class) => Inheritance
 
     def get_instrument(self):
         return self.instrument
